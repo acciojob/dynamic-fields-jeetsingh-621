@@ -22,7 +22,8 @@ setfields((prevfields)=>{
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Submitted Data:", fields);
+    const submittedData = fields.map(({ name, age }) => ({ name, age }));
+    console.log("Submitted Data:", submittedData);
   };
 
   return (
@@ -35,7 +36,7 @@ setfields((prevfields)=>{
     <button type="button" onClick={()=>removeField(field.id)}>Remove</button>
     </div>
     ))}
-    <button type="button" onClick={addField}>Add field</button>
+    <button type="button" onClick={addField}>Add More..</button>
     <button type="submit">Submit</button>
      </form>
     </div>
