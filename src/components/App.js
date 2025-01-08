@@ -23,7 +23,7 @@ setfields((prevfields)=>{
   const handleSubmit = (event) => {
     event.preventDefault();
     const submittedData = fields.map(({ name, age }) => ({ name, age }));
-    console.log("Submitted Data:", submittedData);
+    console.log( submittedData);
   };
 
   return (
